@@ -15,43 +15,70 @@
             }
             
             /* 헤더 */
-            header{width: 100%;height: 120px; display: flex; justify-content: space-between; background-color: aqua;}
+            header{width: 100%;height: 120px; display: flex; justify-content: space-between; background-color: black; align-items: center;}
             header div:nth-of-type(1){width: 250px; height: 120px; }
             header div:nth-of-type(3){width: 250px; height: 120px; margin-left: 100px;}
-            header .list{ width: calc(100% - 500px); border: 2px solid blue; border-radius: 100px;}
-            header .list ul{height: 100%; display: flex; align-items: center;}
-            header .list ul li{padding: 0 10px;}
+            header .list{ width: calc(100% - 500px); border: 2px outset black; border-radius: 100px; background-image: linear-gradient(to right, darkblue 5%, blue 40%,white); height: 50%; }
+            header .list >ul{height: 100%;  display: flex; align-items: center; position: relative;}
+            header .list> ul> li{padding: 20px 10px; color: white; position: relative;}
+            header .list> ul> li:hover .dropdowncontent{display: block;}
+            .dropdowncontent{width: 100%; position: absolute; top: 60px; left: 0; z-index: 3; background-color: blue; display: none;}
+            .dropdowncontent li{text-align: center;}
+            .dropdowncontent li a{color:white; font-weight: bold;}
             header img{height: 100%;}
+         
             
             
             /* 슬라이더 */
-            #slider{clear: both; width: 100%; height:930px; position: relative; background-repeat: no-repeat;  background-image:url('../img/backgroundimg.jpg'); background-size: 110%; }
-            #slider div:nth-of-type(1){background-color: blue; float: right; margin:100px 250px;}
+            #slider{clear: both; width: 100%; height:930px; position: relative; background-repeat: no-repeat;  background-image:url('../img/backgroundimg.jpg'); background-size: 120%; }
+            #slider div:nth-of-type(1){ float: right; padding: 50px; }
      
-            .animation:nth-of-type(2){width: 100%; height: 280px; position: absolute; left: 0; bottom: 200px; transform: skewY(-5deg); background-color: aquamarine;}
-            .animation:nth-of-type(3){width: 100%; height: 260px; position: absolute; left: 0; bottom: -60px; transform: skewY(-5deg);  background-color: rgb(127, 255, 155);}
+            .animation{width: 100%; height: 250px; position: absolute; left: 0; bottom: 200px; transform: skewY(-5deg); background-image: url(../img/animation.png); background-size: 150% 90%; background-repeat: repeat-x; animation: rotate 300s linear infinite;
+            background-color:#333}
+
+            @keyframes rotate{
+                from{
+                    background-position: 0 center;
+                }
+                to{
+                    background-position: -10000px center;
+                }
+            }
+            
+            .animation2{width: 100%; height: 265px; position: absolute; left: 0; bottom: -60px; transform: skewY(-5deg); background-color:#333; background-image: url(../img/ani12345.png); background-size: 250% 100%; background-repeat: repeat-x; animation: rotate2 300s linear infinite}
+
+            @keyframes rotate2{
+                from{
+                    background-position: 0 center ;
+                }
+                to{
+                    background-position: 10000px center;
+                }
+            }
  
             /* 밴드 */
-            .band{width:100%; height:110px; margin-bottom: 50px; position: relative; top: -10px; background-color: blue;}
+            .band{width:100%; height:110px; position: relative; background-color: blue;}
             #flowtext{width: 100%; height: 100px; transform: skewY(-5deg); background-color: blueviolet;}
             
 
             /* -------------------- 메인 페이지 시작 --------------------*/
             /* 게임소개 이미지 */
-            .introduceimage{width: 100%; height: 500px; display: flex; justify-content:center; align-items: center;}
+            
+            .introduceimage{width: 100%; height: 500px; display: flex; justify-content:center; align-items: center;
+                background-image:url(../img/backgroundimg.png);padding: 20px 0;}
+
             .introduceimage div{width: 650px; height: 420px; margin: 5px; background-color: goldenrod; overflow: hidden; text-align: center;}
             .introduceimage div:nth-of-type(2){line-height: 20px; display: flex; align-items: center;}
             .introduceimage img{width: 100%;}
             #flowtext2{width: 100%; height: 100px;  background-color: red;}
 
             /* 플레잉비디오 */
-            .playingvideo{width: 100%; height: 650px; margin: 0 auto; background-color: aqua;
-            display: flex; justify-content: center;}
+            .playingvideo{width: 100%; height: 650px; margin: 0 auto; display: flex; justify-content: center;}
             .playingvideo video {width: 100%;}
             
             /* 케릭터정보 */
-            .character{width: 100%; height: 500px; margin: 0 auto; display: flex; justify-content:center; align-items: center;}
-            .character div{width: 650px; height: 420px; margin: 5px;display:flex; justify-content: center; align-items: center; background-color: gold;}
+            .character{width: 100%; height: 650px; margin: 0 auto; display: flex; justify-content:center; align-items: center;  background-image:url(../img/backgroundimg.png);background-repeat: no-repeat;  background: linear-gradient(to bottom rgb(255,255,255,0)20%);}
+            .character div{width: 420px; height: 600px; margin: 150px; background-color: gold;overflow: hidden;}
 
             /* 스크린샷  */
             .screenshot{width:100%; height:450px; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
@@ -61,9 +88,9 @@
             .screenshot img{width: 100%;}
 
             /* 푸터 */
-            footer{width: 100%; height:700px; background-color: wheat; display: flex; flex-direction: column; align-items: center;}
-            .footerone{height:500px; text-align: center;  display: flex;  flex-direction: column; justify-content: center;}
-            .footertwo{width:500px; height:150px; display: flex; justify-content: center; flex-wrap: wrap;background-color: red;}
+            footer{width: 100%; height:700px; background-color:black; display: flex; flex-direction: column; align-items: center; color: white;}
+            .footerone{height:500px; text-align: center;}
+            .footertwo{width:500px; height:100px; display: flex;  flex-wrap: wrap;  justify-content: center;}
            
             .logo img{width:300px; height: 200px;}
             
