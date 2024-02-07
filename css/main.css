@@ -1,6 +1,17 @@
-*{margin: 0; padding: 0;}
-            a{text-decoration: none; color: #333;}
+            @charset "UTF-8";
+            /* 폰트 */
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+         
+            .ulbox.dropdownone li a,h4,h3{font-family: 'Noto Sans KR', sans-serif;}
+          
+
+            *{margin: 0; padding: 0;}
+            a{text-decoration: none;}
+            a{color: white;}
             ul,ol,li{list-style: none;}
+
+            
+            
 
             /* 반응형적용 common.css */
             #wrap{width: 100%;}
@@ -18,15 +29,24 @@
             header{width: 100%;height: 120px; display: flex; justify-content: space-between; background-color: black; align-items: center;}
             header div:nth-of-type(1){width: 250px; height: 120px; }
             header div:nth-of-type(3){width: 250px; height: 120px; margin-left: 100px;}
+            
+            .rotatelogo img {animation: rotate_image 5s linear infinite; transform-origin:50% 50%; z-index: 3;}
+            @keyframes rotate_image{
+            100%{
+                transform: rotate(360deg);
+             }
+            }
+
             header .list{ width: calc(100% - 500px); border: 2px outset black; border-radius: 100px; background-image: linear-gradient(to right, darkblue 5%, blue 40%,white); height: 50%; }
             header .list >ul{height: 100%;  display: flex; align-items: center; position: relative;}
             header .list> ul> li{padding: 20px 10px; color: white; position: relative;}
-            header .list> ul> li:hover .dropdowncontent{display: block;}
-            .dropdowncontent{width: 100%; position: absolute; top: 60px; left: 0; z-index: 3; background-color: blue; display: none;}
-            .dropdowncontent li{text-align: center;}
-            .dropdowncontent li a{color:white; font-weight: bold;}
+
+            header .list> ul> li:hover .dropdownone{display: block;}
+            .dropdownone{position: absolute; top: 60px; left: 50%; z-index: 3; background-color: blue; display: none; transform: translateX(-50%);}
+            .dropdownone li{text-align: center; padding: 5px 10px;color:white; 
+            white-space: nowrap;}
             header img{height: 100%;}
-         
+            
             
             
             /* 슬라이더 */
@@ -34,8 +54,8 @@
             #slider div:nth-of-type(1){ float: right; padding: 50px; }
      
             .animation{width: 100%; height: 250px; position: absolute; left: 0; bottom: 200px; transform: skewY(-5deg); background-image: url(../img/animation.png); background-size: 150% 90%; background-repeat: repeat-x; animation: rotate 300s linear infinite;
-            background-color:#333}
-
+            background-color:#333;}
+                
             @keyframes rotate{
                 from{
                     background-position: 0 center;
@@ -57,15 +77,21 @@
             }
  
             /* 밴드 */
-            .band{width:100%; height:110px; position: relative; background-color: blue;}
-            #flowtext{width: 100%; height: 100px; transform: skewY(-5deg); background-color: blueviolet;}
+            .band{width:100%; height:110px; position: relative; background-color: blue;  background-image: linear-gradient(to right, darkblue 5%, blue 40%,white);}
+            #flowtext{width: 100%; height: 100px; transform: skewY(-5deg); background-color: darkblue;
+            display: flex; align-items: center; justify-content: center; position: relative;}
+            .band ul {width: 200%; display:flex; justify-content: space-around; position:absolute; animation:flowRolling 53s infinite linear;} 
+            .band ul li {font-size: 70px; color: white;}
+            @keyframes flowRolling {
+                from   { transform: translateX(0%); }
+                to { transform: translateX(-100%); }
+              }
             
 
             /* -------------------- 메인 페이지 시작 --------------------*/
             /* 게임소개 이미지 */
             
-            .introduceimage{width: 100%; height: 500px; display: flex; justify-content:center; align-items: center;
-                background-image:url(../img/backgroundimg.png);padding: 20px 0;}
+            .introduceimage{width: 100%; height: 500px; display: flex; justify-content:center; align-items: center; background-image:url(../img/backgroundimg.png);padding: 20px 0;}
 
             .introduceimage div{width: 650px; height: 420px; margin: 5px; background-color: goldenrod; overflow: hidden; text-align: center;}
             .introduceimage div:nth-of-type(2){line-height: 20px; display: flex; align-items: center;}
@@ -74,15 +100,34 @@
 
             /* 플레잉비디오 */
             .playingvideo{width: 100%; height: 650px; margin: 0 auto; display: flex; justify-content: center; background-color: black; }
-            .playingvideo video {width: 100%;}
+            .playingvideo video {width: 80%;}
             
             /* 케릭터정보 */
-            .character{width: 100%; height: 600px; margin: 0 auto; display: flex; justify-content:center; align-items: center;  background-image:url(../img/backgroundimg.png);background-repeat: no-repeat; }
-            .character div{width: 420px; height: 600px; margin: 150px; background-color: gold;overflow: hidden;}
+            .character{width: 100%; height:600px; 
+            background-image:url(../img/backgroundimg.png);background-repeat: no-repeat;}
+            .character h3{text-align: center; line-height: 100px; font-size: 30px;}
+            .container{width:100%; height: 500px; display:flex; justify-content: center; align-items: center;}
+            .character img{width: 100%;}
+      
+              
+              .characterbox {
+                color: white;
+                text-align: center;
+                border-radius: 10px;
+                padding: 1rem;
+                background-color: blue;  background-image: linear-gradient(to bottom, black 1%, darkblue 30%,white);
+                flex: 1;
+                transition: 0.5s ease-in-out;
+              }
+              
+              .characterbox:hover {
+                flex:1.7;
+                cursor: pointer;
+              }
 
             /* 스크린샷  */
             .screenshot{width:100%; height:500px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
-            .screenshot a{width:415px; height: 300px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
+            .screenshot a{width:415px; height: 340px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
             .screenshot>div{width: 100%;}
             .screenshot article{width: 100%; color: white;}
             .screenshot img{width: 100%;}

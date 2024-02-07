@@ -6,40 +6,7 @@
         <title></title>
         <link href="css/common.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
-        <!-- <style>
-            *{margin: 0; padding: 0;}
-            a{text-decoration: none; color: #333;}
-            ul,ol,li{list-style: none;}
-
-            #wrap{width: 100%;}
-            header{width: 100%;height: 100px; background-color: aqua;} 
-
-            /* 슬라이더 */
-            #slider{width: 100%; height: 1060px; position: relative; background-color: antiquewhite;}
-            .animation:nth-of-type(3){width: 100%; height: 330px; position: absolute; left: 0; bottom: 200px; transform: skewY(-5deg); background-color: aquamarine;}
-            .animation:nth-of-type(4){width: 100%; height: 260px; position: absolute; left: 0; bottom: -60px; transform: skewY(-5deg);  background-color: rgb(127, 255, 155);}
-
-            /* 밴드 */
-            .band{width: 100%; height: 110px; margin-bottom: 50px; position: relative; top: -10px; background-color: blue;}
-            #flowtext{width: 100%; height: 100px; transform: skewY(-5deg); background-color: blueviolet;}
-            
-            /* 메인시작~~*/
-            /* 게임소개 이미지 */
-            .introduceimage{width: 100%; display: flex; justify-content:center; height: 550px; align-items: center;}
-            .introduceimage div{width:650px; height: 420px; display: flex; justify-content: center; align-items: center; margin: 5px;}
-            #flowtext2{width: 100%; height: 100px;  background-color: red;}
-
-            /* 플레잉비디오 */
-            .playingvideo{width: 100%; height: 650px; margin: 0 auto; background-color: aqua;
-            display: flex; justify-content: center;}
-            .playingvideo video {width: 100%;}
-            
-            /* 케릭터정보 */
-            .character{width: 100%; display: flex; justify-content:center; height: 550px; margin: 0 auto; align-items: center;}
-            .character div{width:650px; height:420px; display:flex; justify-content: center; align-items: center; margin: 5px;}
-            /* 푸터 */
-            footer{background-color:#333;}
-        </style> -->
+      
 
     </head>
 
@@ -60,7 +27,7 @@
                         <li>
                          
                             <h4>커뮤니티</h4>
-                            <ul class="dropdowncontent">
+                            <ul class="dropdownone">
                                 <li><a href="#">토론장</a></li>
                                 <li><a href="#">순위표</a></li>
                             </ul>
@@ -68,18 +35,20 @@
                         </li>
 
                         <li><h4>상점</h4>
-                            <!-- <ul>
-                                <li>게임 내 콘텐츠</li>
-                                <li>기어 스토어</li>
-                            </ul> -->
+                            <ul class="dropdownone">
+                                <li><a href="#">게임 내 콘텐츠</a></li>
+                                <li><a href="#">기어스토어</a></li>
+                            </ul>
                         </li>
                     </ul>
                     
                 </div>
-                <div><img src="img/logo.png" alt="logo"></div>
+                <div class="rotatelogo"><img src="img/logo.png" alt="logo"></div>
                 
             </header>
-    
+
+            
+            </div>
     
             <div id="slider">
                
@@ -91,7 +60,13 @@
             </div>
     
             <div class="band">
-                <div id="flowtext">flowtext</div>
+                <div id="flowtext">
+                    <ul class="list">
+                        <li>heros of the strom</li>
+                        <li>heros of the strom</li>
+                        <li>heros of the strom</li>
+                    </ul>
+                </div>
             </div>
 
            
@@ -115,30 +90,49 @@
                                                 <button>ㅇ</button>
                 </section>
                 
-                <section class="character">  
-                    <div><img src="img/deathwing2.JPG" alt="deathwing2"></div>
-                    <div>text</div>
-                </section>        
+                 <section class="character">  
+                    <h3>개성이 넘치는 다양한 영웅들과 함께 전장을 누비십시오.</h3>
+                    <div class="container">    
+                        <div class="characterbox"><img src="img/liming2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/dehaka2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/whitemain2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/deathwing2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/jeina2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/polstar2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/blaze2.JPG" alt="deathwing2"></div>
+                        <div class="characterbox"><img src="img/genji2.JPG" alt="deathwing2"></div>
+                    </div>
+
+                 </section>        
                 
                  <section class="screenshot">    
                         <a href="">
                             <div><img src="img/screenshot1.jpg" alt="a"></div>
                             <article>
                                 <h3><패치노트><br>히어로즈 오브 더스톰 패치 노트 - 2023년 9월20일
-                                </h3><br><h6>2023.09.20</h6>
+                                </h3><br><h5>2023.09.20</h5>
                             </article>
                         </a>
                         <a href="">
                             <div><img src="img/screenshot1.jpg" alt="a"></div>
-                            <article><h3>패치노트</h3></article>
+                            <article>
+                                <h3><패치노트><br>히어로즈 오브 더스톰 패치 노트 - 2023년 5월10일
+                                </h3><br><h5>2023.05.10</h5>
+                            </article>
                         </a>
                         <a href="">
                             <div><img src="img/screenshot.avif" alt="a"></div>
-                            <article><h3>패치노트</h3></article>
+                            <article>
+                                <h3><패치노트><br>히어로즈 오브 더스톰 유저 간담회 - 2023년 4월26일
+                                </h3><br><h5>2023.04.26</h5>
+                            </article>
                         </a>
                         <a href="">
                             <div><img src="img/screenshot2.avif" alt="a"></div>
-                            <article><h3>패치노트</h3></article>
+                            <article>
+                                <h3><패치노트><br>히어로즈 오브 더스톰 밸런스 패치 - 2022년 3월30일
+                                </h3><br><h5>2022.03.30</h5>
+                            </article>
                         </a>       
                 </section>
            
@@ -153,18 +147,18 @@
                             <option value="네덜란드어">네덜란드어</option>
                             <option value="일본어">일본어</option>
                         </select>
-                        <div class="logo"><img src="img/Blizard.png" alt="logo"></div>
+                        <div class="logo"><a href=""><img src="img/Blizard.png" alt="logo"></a></div>
                      
                              
                      <div class="ulbox">
                              <ul>
-                              <li>인재 채용</li>
-                              <li>회사 소개</li>
-                              <li>고객지원</li>
-                              <li>문의 등록</li>
-                              <li>보도 자료</li>
-                              <li>API</li>
-                              <li>BATTLE.NET PC방</li>
+                              <li><a href=""><h3>인재 채용</h3></a></li>
+                              <li><a href=""><h3>회사 소개</h3></a></li>
+                              <li><a href=""><h3>고객지원</h3></a></li>
+                              <li><a href=""><h3>문의 등록</h3></a></li>
+                              <li><a href=""><h3>보도 자료</h3></a></li>
+                              <li><h3>API</h3></li>
+                              <li><h3>BATTLE.NET PC방</h3></li>
                              </ul>
                       </div>      
                               <P>한곳에서 모든게임을 플레이 할수있는 Battle.net앱</P>
