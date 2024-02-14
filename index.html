@@ -3,10 +3,22 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>d</title>
         <link href="css/common.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
-      
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+        <script>
+      $(document).ready(function(){
+      $('.rotatelogo').click(function(){
+        $('#myNav').css('width','100%');
+      });
+
+      $('.closebtn').click(function(){
+        $('#myNav').css('width','0');
+      });
+    });
+        </script>
 
     </head>
 
@@ -18,7 +30,7 @@
                 
                 <div class="list">
                     
-                    <ul>
+                    <ul class="hamberger">
                         <li><h4>개요</h4></li>
                         <li><h4>영웅</h4></li>
                         <li><h4>게임플레이</h4></li>
@@ -43,8 +55,47 @@
                     </ul>
                     
                 </div>
-                <div class="rotatelogo"><img src="img/logo.png" alt="logo"></div>
+                <div class="rotatelogo" id="rotatelogo"><img src="img/logo.png" alt="logo"></div>
                 
+                <div id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn">&times;</a>
+        
+                    <div class="overlay-content">
+                        <ul class="hamberger">
+                            <li><h4>개요</h4></li>
+                            <li><h4>영웅</h4></li>
+                            <li><h4>게임플레이</h4></li>
+                            <li><h4>미디어</h4></li>
+            
+                            <li>
+            
+                                <h4>커뮤니티</h4>
+                                <ul class="dropdownone">
+                                    <li><a href="#">토론장</a></li>
+                                    <li><a href="#">순위표</a></li>
+                                </ul>
+            
+                            </li>
+            
+                            <li>
+                                <h4>상점</h4>
+                                <ul class="dropdownone">
+                                    <li><a href="#">게임 내 콘텐츠</a></li>
+                                    <li><a href="#">기어스토어</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            
+                    </div>
+        
+                </div>
+
+
+
+
+                <!-- sadsad -->
+
             </header>
 
             
