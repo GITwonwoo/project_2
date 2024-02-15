@@ -2,7 +2,7 @@
             /* 폰트 */
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
          
-            .ulbox.dropdownone li a,h4,h3{font-family: 'Noto Sans KR', sans-serif;}
+            .ulbox.dropdownone li a,h4,h3,p{font-family: 'Noto Sans KR', sans-serif;}
           
                        /* 반응형적용 main.css */
                        #wrap{width: 100%;}
@@ -50,11 +50,12 @@
             
                        /* 게임소개 이미지 */
                        
-                       .introduceimage{width: 100%; height: 900px; display: flex; justify-content:center; align-items: center; flex-wrap: wrap; background-image:url(../img/backgroundimg.png);padding: 20px 0;}
+                       .introduceimage{width: 100%; height: 730px; display: flex; justify-content:center; align-items: center; flex-wrap: wrap; background-image:url(../img/backgroundimg.png);padding: 20px 0;
+                       background-size: cover;}
             
-                       .introduceimage div{width: 600px; height: 420px; margin: 5px;  overflow: hidden; text-align: center;}
+                       .introduceimage div{width: 500px; height: 370px; margin: 5px;  overflow: hidden; text-align: center;}
                        .introimage1 img{width: 100%;}
-                       .introimage2 img{width: 100%; height:71.5%;}
+                       .introimage2 img{width: 100%;}
                       
             
                        /* 플로우텍스트2 */
@@ -63,15 +64,31 @@
                        #flowtext2 ul li {font-size:3.5vw; color: white;}
                      
                        /* 플레잉비디오 */
-                       .playingvideo{width: 100%; height: 400px; margin: 0 auto; display: flex; justify-content: center; background-color: black; position: relative; }
+                       .playingvideo{width: 100%; height: 300px; margin: 0 auto; display: flex; justify-content: center; background-color: black; position: relative; }
                        .playingvideo video {width: 100%;}
                        .videotext{width:50%;height: 20%; position: absolute; top: 40%; left: 3%;}
-                       .videotext h3{font-size: 100%; color: white;}
+                       .videotext h3{font-size: 3.0vw; color: white;}
+                       .videotext button {
+                        border: 0;
+                        outline: none;
+                        font-size: 2.0vw;
+                        margin: 5px;
+                        padding: 10px;
+                        background: orange;
+                        color: white;
                        
+                        cursor: pointer;
+                        border-radius: 10px;
+                      }
+                      .videotext button:hover {
+                        color: white;
+                        background: red;
+                      }
+
                        /* 케릭터정보 */
-                       .character{width: 100%; height:600px; display: flex; flex-direction: column; justify-content: center;
+                       .character{width: 100%; height:500px; display: flex; flex-direction: column; justify-content: center;
                         background-image:url(../img/backgroundimg.png);background-repeat: no-repeat; background-size: cover;}
-                       .character h3{margin: 0 auto; line-height: 150px; font-size: 3.5vw;}
+                       .character h3{margin: 0 auto; line-height: 60px; font-size: 3.5vw;}
                        .container{width:100%; height: 100%; display:flex; justify-content: center; align-content: center; flex-wrap: wrap;}
                        
                        .character img{width: 100%; opacity: 0.8;}
@@ -147,10 +164,11 @@
                        /* 게임소개 이미지 */
                        
                        .introduceimage{width: 100%; height: 1000px; display: flex; justify-content:center; align-items: center; flex-wrap: wrap; background-image:url(../img/backgroundimg.png);padding: 20px 0;}
-            
+                       
                        .introduceimage div{width: 600px; height: 420px; margin: 5px;  overflow: hidden; text-align: center;}
                        .introimage1 img{width: 100%;}
-                       .introimage2 img{width: 100%; height:71.5%;}
+                       .introimage2 img{width: 100%;}
+                       
                       
             
                        /* 플로우텍스트2 */
@@ -163,9 +181,26 @@
                        .playingvideo video {width: 100%;}
                        .videotext{width:50%;height: 20%; position: absolute; top: 40%; left: 3%;}
                        .videotext h3{font-size: 100%; color: white;}
+                       .videotext button {
+                        border: 0;
+                        outline: none;
+                        font-size: 2.0vw;
+                        margin: 5px;
+                        padding: 10px;
+                        background: orange;
+                        color: white;
+                       
+                        cursor: pointer;
+                        border-radius: 10px;
+                      }
+                      .videotext button:hover {
+                        color: white;
+                        background: red;
+                      }
+                       
                        
                        /* 케릭터정보 */
-                       .character{width: 100%; height:800px; display: flex; flex-direction: column; justify-content: center;
+                       .character{width: 100%; height:1000px; display: flex; flex-direction: column; justify-content: center;
                         background-image:url(../img/backgroundimg.png);background-repeat: no-repeat; background-size: cover;}
                        .character h3{margin: 0 auto; line-height: 150px; font-size: 3.5vw;}
                        .container{width:100%; height: 100%; display:flex; justify-content: center; align-content: center; flex-wrap: wrap;}
@@ -189,8 +224,8 @@
                          }
             
                        /* 스크린샷  */
-                       .screenshot{width:100%; height:800px; margin: 0 auto; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; background-color: black; }
-                       .screenshot a{width:40%; height: 320px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
+                       .screenshot{width:100%; height:500px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
+                       .screenshot a{width:415px; height:270px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
                        .screenshot>div{width: 100%;}
                        .screenshot article{width: 100%; color: white;}
                        .screenshot img{width: 100%;}
@@ -254,7 +289,7 @@
                        .introduceimage div{width: 600px; height: 420px; margin: 5px;  overflow: hidden; text-align: center;}
                        
                        .introimage1 img{width: 100%;}
-                       .introimage2 img{width: 100%; height:71.5%;}
+                       .introimage2 img{width: 100%;}
                       
                       
             
@@ -269,6 +304,22 @@
                        .videotext{width:30%;height: 20%; position: absolute; top: 50%; left: 15%; }
                        .videotext h3{color: white;}
                        .videotext button{margin-top: 20px;}
+                       .videotext button {
+                        border: 0;
+                        outline: none;
+                        font-size: 2.0vw;
+                        margin: 5px;
+                        padding: 10px;
+                        background: orange;
+                        color: white;
+                       
+                        cursor: pointer;
+                        border-radius: 10px;
+                      }
+                      .videotext button:hover {
+                        color: white;
+                        background: red;
+                      }
                       
                        
                        /* 케릭터정보 */
@@ -294,7 +345,7 @@
             
                        /* 스크린샷  */
                        .screenshot{width:100%; height:500px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
-                       .screenshot a{width:415px; height: 340px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
+                       .screenshot a{width:415px; height: 310px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
                        .screenshot>div{width: 100%;}
                        .screenshot article{width: 100%; color: white;}
                        .screenshot img{width: 100%;}
