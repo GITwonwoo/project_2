@@ -10,32 +10,82 @@
             /* 슬라이더 */
             #slider{width: 100%; background-color:black; position: relative;}
             #slider img{width: 100%;}
-            #herobox{position: absolute; top:20%; left: 50%; width: 1260px;
+            #herosection{position: absolute; top:20%; left: 50%; width: 1260px;
                 transform: translateX(-50%); display: flex;}
-            #abouthero{display: flex; color: #fff; width: 100px; background-color: #fff;}       
+            #abouthero{display: flex; color: #fff; }
+            #logo{width: 7vw;}     
+            #heroname~div{font-weight: 400;
+                font-size: 24px;
+                line-height: 1.2em;
+                color: #6cf;}  
             #heroname{
                 white-space: nowrap;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight:700;
                 margin: 0;
-                font-size: 2rem;
+                font-size: 3vw;
                 font-family: Metronic,Verdana,Source Sans Pro,sans-serif;
                 color: #fff;
-                line-height: 1.2em;
+                line-height: 1.6em;
                 text-shadow: 0 0 16px #009cff;}
+             #herobox{width: 30%; color:#8eb1bc;}   
                 
              
             
-            /* 섹션 */
+            /* 메인 */
             #background{background-image:url(../img/backgroundimg.png);}
-            #content {width: 1260px; height: 1300px; margin: 0 auto; 
-             display: flex;   background-color:red}
+            #content {width: 1260px; height: 1200px; margin: 0 auto; 
+             display: flex; }
+           
 
-            .left {width: 60%; height: 1300px;  background-color: black}
-    
-            .box {width:600px; height: 300px; background-color: darkgrey; margin: 10px;}
-            .right {width: 40%; height: 800px;  position: sticky; top: 0; background-color: slateblue;}
-    
-            #detail {width: 100%; height: 100px; margin: 0 auto; background-color: pink;}
+            .left {width: 100%; height: 1200px; }
+            .box {width:450px; height: 285px; margin: 10px;}
+
+            .right{width: 100%;height: 650px; position: sticky; top:0; background-color: slateblue;}
+            .right div{ height: 300px; margin-top: 10px; background: yellow;}
+
+            .abilityname{display: flex; align-items: center; font-size: 1.5vw; }
+            .abilityicon{position: relative;}
+            .abilityicon img{width: 60%;}
+            .abilityicon div{position: absolute; top: 0px;}
             
+            
+            
+
+             /* 위드100 그림이미지 */
+             .sectionbox{width:100%; height:600px; margin: 0 auto; ;
+              background-color: black;}
+             
+             .detailtext{position: absolute; top:30%; left: 3%; width:20%; height: 20%; color: white;}
+             .detailtext h3{font-size: 1.1vw;}
+             .detailtext button {
+                border: 0;
+                outline: none;
+                font-size: 0.8vw;
+                margin: 5px;
+                padding: 10px;
+                background: orange;
+                color: white;
+               
+                cursor: pointer;
+                border-radius: 10px;
+              }
+              .detailtext button:hover {
+                color: white;
+                background: red;
+              }
+             .detailtext p{color:#6cf; font-size: 1.1vw;}
+             .das{position: relative;}
+             .detailbox img{width: 100%;}
+             
+             .das2{position: relative;}
+             .detailtext2{position: absolute; top:30%; left: 3%; width:20%; height: 20%; color: white;}
+             .snsbox{width: 100%; display: flex;}
+            
+             
+
+
+
+        
+                         
     
