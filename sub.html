@@ -8,20 +8,43 @@
     <link href="css/sub.css" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
     <script>
-  $(document).ready(function(){
-  $('.rotatelogo').click(function(){
-    $('#myNav').css('width','50%');
-  });
+        $(document).ready(function () {
+            $('.rotatelogo').click(function () {
+                $('#myNav').css('width', '50%');
+            });
 
-  $('.closebtn').click(function(){
-    $('#myNav').css('width','0');
-  });
-});
+            $('.closebtn').click(function () {
+                $('#myNav').css('width', '0');
+            });
+
+
+            //   하단섹션
+            function changeimage(){
+                if (window.matchMedia("(max-width: 737px)").matches) {
+                    $(".das img").attr("src", "img/section_mobile.jpg")
+                    $(".das2> img").attr("src", "img/section_mobile2.jpg")
+                    $("#slider> img").attr("src", "img/mobile3.jpg")
+                } else {
+                    $(".das img").attr("src", "img/sectionimage.jpg")
+                    $(".das2> img").attr("src", "img/sectionimage2.jpg")
+                    $("#slider> img").attr("src", "img/the-destroyer.jpg")
+                }
+            }
+
+            changeimage()
+            $(window).resize(changeimage);
+            
+        });
+
+
+
+
     </script>
      
 
 </head>
 <body>
+    
     <header>
         <div><a href="index.html"><img src="img/Blizard.png" alt="Blizard"></a></div>
             
@@ -98,8 +121,8 @@
     </header>
 
 
-
-
+<div id="subwrap">
+  <!-- 슬라이더 -->
 <div id="slider">
     <img src="img/the-destroyer.jpg" alt="the-destroyer">
 
@@ -119,8 +142,8 @@
    
 </div>
 
-
-<div id="background">
+<!-- 메인가운데 -->
+<div id="main">
     <div id="content">
         <div class="left">
             <div class="box">
@@ -163,13 +186,16 @@
            
         </div>
         <div class="right">
-            <div></div>
-            <div></div>
+            <h3>플레이 활용 및 하이라이트</h3>
+            <div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6EwBY9DBVjQ" title="데스윙이 적 영웅들 찢어버리는 영상 [1080p, 히오스]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+            <div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/bieY4j29kgg" title="[옥냥이 히오스] 데스윙님이 시공에 강림하셨다! 진짜 겁나 셉니다🐲 (Heroes Of The Storm)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         </div>
         
                
     </div>
-
+     
+    <!-- 하단섹션 -->
     <div class="sectionbox">
     
            <div class="detailbox">
@@ -181,29 +207,30 @@
                           <p>플레이할 준비가 되셨나요?</p>
                           <h3>히어로즈 오브 더 스톰 다운로드</h3>
                           <button>무료로 플레이하기</button>
+
                      </div>  
                  </div>
 
                  <div class="das2">
                      <img src="img/sectionimage2.jpg" alt="sectionimage2">
                    
-                     <div class="detailtext2">
-                         <div class="snsbox">   
-                                 <h3>소셜서비스</h3>
-                                 <div class="sns">
-                                     <div><img src="img/logo.png" alt=""></div>
-                                      <div><img src="" alt=""></div>
-                                     <div><img src="" alt=""></div>
-                                 </div>
-                         </div>  
-                     </div>          
+                     <div class="snsbox">   
+                                 
+                         <h3>소셜서비스</h3>
+                         <div class="snsmark">
+                             <div><img src="img/facebook.png" alt=""></div>
+                             <div><img src="img/twitter.png" alt=""></div>
+                             <div><img src="img/twitch.png" alt=""></div>
+
+                         </div>
+                     </div>  
                  </div>
            </div>
             
        
     </div>    
-    
-
+</div>    
+<!-- 풋터 -->
 <footer>
     <div class="footerone">
          

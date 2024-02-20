@@ -4,13 +4,188 @@
          
             .ulbox.dropdownone li a,h4,h3,p{font-family: 'Noto Sans KR', sans-serif;}
 
-            /* submain */
+            @media(max-width:737px) {
+
+                /* 슬라이더 */
+                #slider{width: 100%; background-color:black; position: relative;
+                height: 1000px;}
+                #slider img{width: 100%; filter: blur();}
+                #herosection{position: absolute; top:60%; left: 50%; width:63vw;
+                    transform: translateX(-50%); display: flex;}
+                #abouthero{display: flex; color: #fff; margin: 20px;}
+                #logo{width: 10vw;}     
+                #heroname~div{font-weight: 400;
+                    font-size: 24px;
+                    line-height: 1.2em;
+                    color: #6cf;}  
+                #heroname{
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    font-weight:700;
+                    margin: 0;
+                    font-size: 5vw;
+                    font-family: Metronic,Verdana,Source Sans Pro,sans-serif;
+                    color: #fff;
+                    line-height: 1.6em;
+                    text-shadow: 0 0 16px #009cff;}
+                 #herobox{width: 100%; color:#8eb1bc; margin-top: 50px;}   
+                    
+                 
+                
+                /* 메인 */
+                #main{background-image:url(../img/backgroundimg.png);}
+                #content {width: 63vw; height: 1600px; margin: 0 auto; 
+                 display: flex; flex-direction: column; }
+               
+    
+                .left {width:100%; height: 1000px; display: flex; flex-direction: column;
+                  align-items: center;}
+                .box {width:330px; height: 230px; margin: 10px;}
+    
+                .right{width: 100%;height: 450px; text-align: center; display: flex; flex-direction: column; align-items: center;}
+                .right div{width: 350px; height: 200px; margin-top: 10px; background: red;}
+                .right h3{font-size: 25px;}
+                .abilityname{display: flex; align-items: center; font-size: 20px; }
+                .abilityicon{position: relative;}
+                .abilityicon img{width: 60%;}
+                .abilityicon div{position: absolute; top: 0px;}
+                
+              
+              
+                 /* 위드100 그림이미지 */
+                  
+
+
+                 .sectionbox{width:100%; height:300px; margin: 0 auto; ;
+                  background-color: black;}
+                 .das{position: relative;}
+                 .detailbox img{width: 100%;}
+    
+                 .detailtext{position: absolute; top:30%; left: 3%; width:20%; height: 20%;      color: white;}
+                 
+                 .detailtext p{color:#6cf; font-size: 3.1vw; }
+                 .detailtext h3{font-size: 2.0vw;}
+                 .detailtext button {
+                    border: 0;
+                    outline: none;
+                    font-size: 1.5vw;
+                    margin: 3px;
+                    padding: 10px;
+                    background: orange;
+                    color: white;
+            
+                   
+                    cursor: pointer;
+                    border-radius: 10px;
+                  }
+                  .detailtext button:hover {
+                    color: white;
+                    background: red;
+                  }
+                 
+                 
+                 
+                 .das2{position: relative;}
+                 .snsbox{position: absolute; top:20%; left: 3%;color: white; display: flex; margin: 0 auto; align-items: center;}
+                 .snsbox h3{font-size: 3.0vw; }
+                 .snsmark{display: flex; width: 20vw; }
+                 .snsbox div{margin: 0vw; }
+            }
+            
+            /* -------------------------800px-------------------------- */
+
+            @media(min-width:738px) and (max-width:1216px) {
+
+                /* 슬라이더 */
+            #slider{width: 100%; background-color:black; position: relative;}
+            #slider img{width: 100%;}
+            #herosection{position: absolute; top:20%; left: 50%; width:63vw;
+                transform: translateX(-50%); display: flex;}
+            #abouthero{display: flex; color: #fff;}
+            #logo{width: 7vw;}     
+            #heroname~div{font-weight: 400;
+                font-size: 24px;
+                line-height: 1.2em;
+                color: #6cf;}  
+            #heroname{
+                white-space: nowrap;
+                text-transform: uppercase;
+                font-weight:700;
+                margin: 0;
+                font-size: 3vw;
+                font-family: Metronic,Verdana,Source Sans Pro,sans-serif;
+                color: #fff;
+                line-height: 1.6em;
+                text-shadow: 0 0 16px #009cff;}
+             #herobox{width: 60%; color:#8eb1bc;}   
+                
+             
+            
+            /* 메인 */
+            #main{background-image:url(../img/backgroundimg.png);overflow: hidden;}
+            #content {width: 63vw; height: 2000px; margin: 0 auto; 
+             display: flex; flex-direction: column; }
+           
+
+            .left {width:100%; height: 1200px; display: flex; flex-direction: column;
+              align-items: center;}
+            .box {width:450px; height: 285px; margin: 10px;}
+
+            .right{width: 100%;height: 650px; position: sticky; top:20px;  text-align: center; display: flex; flex-direction: column; align-items: center;}
+            .right div{width: 550px; height: 300px; margin-top: 10px; background: red;}
+            .right h3{font-size: 25px;}
+            .abilityname{display: flex; align-items: center; font-size: 20px; }
+            .abilityicon{position: relative;}
+            .abilityicon img{width: 60%;}
+            .abilityicon div{position: absolute; top: 0px;}
+            
+          
+          
+             /* 위드100 그림이미지 */
+             .sectionbox{width:100%; margin: 0 auto; background-color: black;}
+             .das{position: relative; height: 200px;}
+             .das img{height: 200px; width: auto; position: absolute; left: -30%;}
+
+             .detailtext{position: absolute; top:30%; left: 3%; width:20%; height: 20%;      color: white;}
+             .detailtext p{color:#6cf; font-size: 1.1vw;}
+             .detailtext h3{font-size: 1.1vw;}
+             .detailtext button {
+                border: 0;
+                outline: none;
+                font-size: 0.8vw;
+                margin: 5px;
+                padding: 10px;
+                background: orange;
+                color: white;
+               
+                cursor: pointer;
+                border-radius: 10px;
+              }
+              .detailtext button:hover {
+                color: white;
+                background: red;
+              }
+             
+             
+             
+             .das2{position: relative;}
+             .snsbox{position: absolute; top:20%; left: 3%;color: white; display: flex; margin: 0 auto; align-items: center;}
+             .snsbox h3{font-size: 1.5vw; }
+             .snsmark{display: flex; width: 15vw; }
+             .snsbox div{margin: 1vw; }
+            
+            }
+            
+           /* -------------------------1217px-------------------------- */
+
+            @media(min-width:1217px) {
+            
             * {margin: 0; padding: 0; box-sizing: border-box;}
         
             /* 슬라이더 */
             #slider{width: 100%; background-color:black; position: relative;}
             #slider img{width: 100%;}
-            #herosection{position: absolute; top:20%; left: 50%; width: 1260px;
+            #herosection{position: absolute; top:20%; left: 50%; width: 1200px;
                 transform: translateX(-50%); display: flex;}
             #abouthero{display: flex; color: #fff; }
             #logo{width: 7vw;}     
@@ -33,30 +208,35 @@
              
             
             /* 메인 */
-            #background{background-image:url(../img/backgroundimg.png);}
-            #content {width: 1260px; height: 1200px; margin: 0 auto; 
+            #main{background-image:url(../img/backgroundimg.png);}
+            #content {width: 1200px; height: 1200px; margin: 0 auto; 
              display: flex; }
            
 
-            .left {width: 100%; height: 1200px; }
+            .left {width:50%; height: 1200px; }
             .box {width:450px; height: 285px; margin: 10px;}
 
-            .right{width: 100%;height: 650px; position: sticky; top:0; background-color: slateblue;}
-            .right div{ height: 300px; margin-top: 10px; background: yellow;}
+            .right{width: 45%;height: 650px; position: sticky; top:0px; text-align: center;
+            margin-top: 50px;}
+            .right h3{font-size: 25px;}
+            .right div{width: 550px; height: 300px; margin-top: 10px; background: red;}
 
-            .abilityname{display: flex; align-items: center; font-size: 1.5vw; }
+            .abilityname{display: flex; align-items: center; font-size: 20px; }
             .abilityicon{position: relative;}
             .abilityicon img{width: 60%;}
             .abilityicon div{position: absolute; top: 0px;}
             
-            
-            
-
+          
+          
              /* 위드100 그림이미지 */
-             .sectionbox{width:100%; height:600px; margin: 0 auto; ;
-              background-color: black;}
+             .sectionbox{width:100%; margin: 0 auto; ;
+              background-color:black}
+             .das{position: relative;}
              
-             .detailtext{position: absolute; top:30%; left: 3%; width:20%; height: 20%; color: white;}
+             .detailbox img{width: 100%;}
+
+             .detailtext{position: absolute; top:30%; left: 3%; width:20%; height: 20%;      color: white;}
+             .detailtext p{color:#6cf; font-size: 1.1vw;}
              .detailtext h3{font-size: 1.1vw;}
              .detailtext button {
                 border: 0;
@@ -74,13 +254,16 @@
                 color: white;
                 background: red;
               }
-             .detailtext p{color:#6cf; font-size: 1.1vw;}
-             .das{position: relative;}
-             .detailbox img{width: 100%;}
+             
+             
              
              .das2{position: relative;}
-             .detailtext2{position: absolute; top:30%; left: 3%; width:20%; height: 20%; color: white;}
-             .snsbox{width: 100%; display: flex;}
+             .snsbox{position: absolute; top:20%; left: 3%;color: white; display: flex; margin: 0 auto; align-items: center;}
+             .snsbox h3{font-size: 1.5vw; }
+             .snsmark{display: flex; width: 15vw; }
+             .snsbox div{margin: 1vw; }
+            }
+
             
              
 
