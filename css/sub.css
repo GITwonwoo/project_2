@@ -7,11 +7,9 @@
             @media(max-width:737px) {
 
                 /* 슬라이더 */
-                #slider{width: 100%; background-color:black; position: relative;
-                height: 1000px;}
+                #slider{width: 100%; background-color:black; position: relative;}
                 #slider img{width: 100%; filter: blur();}
-                #herosection{position: absolute; top:60%; left: 50%; width:63vw;
-                    transform: translateX(-50%); display: flex;}
+                #herosection{display: flex; width: 80%; margin: 0 auto;}
                 #abouthero{display: flex; color: #fff; margin: 20px;}
                 #logo{width: 10vw;}     
                 #heroname~div{font-weight: 400;
@@ -28,7 +26,8 @@
                     color: #fff;
                     line-height: 1.6em;
                     text-shadow: 0 0 16px #009cff;}
-                 #herobox{width: 100%; color:#8eb1bc; margin-top: 50px;}   
+                 #herobox{width: 100%; color:#8eb1bc; 
+                  margin:50px 0; }   
                     
                  
                 
@@ -56,7 +55,7 @@
                   
 
 
-                 .sectionbox{width:100%; height:300px; margin: 0 auto; ;
+                 .sectionbox{width:100%; margin: 0 auto; ;
                   background-color: black;}
                  .das{position: relative;}
                  .detailbox img{width: 100%;}
