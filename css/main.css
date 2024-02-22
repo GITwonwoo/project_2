@@ -225,8 +225,8 @@
                          }
             
                        /* 스크린샷  */
-                       .screenshot{width:100%; height:500px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
-                       .screenshot a{width:21.8vw; height:270px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
+                       .screenshot{width:100%; height:250px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
+                       .screenshot a{width:21.8vw;  margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
                        .screenshot>div{width: 100%;}
                        .screenshot article{width: 100%; color: white;}
                        .screenshot img{width: 100%;}
@@ -345,8 +345,8 @@
                          }
             
                        /* 스크린샷  */
-                       .screenshot{width:100%; height:500px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
-                       .screenshot a{width:21.8vw; height: 310px; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
+                       .screenshot{width:100%; height:350px; margin: 0 auto; display: flex; justify-content: center; align-items: center;background-color: black; }
+                       .screenshot a{width:21.8vw; margin: 10px; justify-content: center; align-items: center; text-align: center; background-color:darkblue;border: 2px solid white;}
                        .screenshot>div{width: 100%;}
                        .screenshot article{width: 100%; color: white;}
                        .screenshot img{width: 100%;}
