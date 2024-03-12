@@ -2,7 +2,7 @@
             /* 폰트 */
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
          
-            .ulbox.dropdownone li a,h4,h3,p{font-family: 'Noto Sans KR', sans-serif;}
+            .ulbox.dropdownone li a,h4,h3,p,h1{font-family: 'Noto Sans KR', sans-serif;}
           
                        /* 반응형적용 main.css */
                        #wrap{width: 100%;}
