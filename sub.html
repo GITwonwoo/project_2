@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.rotatelogo').click(function () {
+                $('#myNav').css('width', '50%');
+            });
+
+            $('.closebtn').click(function () {
+                $('#myNav').css('width', '0');
+            });
+
+
+            //   하단섹션
+            function changeimage(){
+                if (window.matchMedia("(max-width: 737px)").matches) {
+                    $(".das img").attr("src", "img/section_mobile.jpg")
+                    $(".das2> img").attr("src", "img/section_mobile2.jpg")
+                    $("#slider> img").attr("src", "img/mobile3.jpg")
+                } else {
+                    $(".das img").attr("src", "img/sectionimage.jpg")
+                    $(".das2> img").attr("src", "img/sectionimage2.jpg")
+                    $("#slider> img").attr("src", "img/the-destroyer.jpg")
+                }
+            }
+
+            changeimage()
+            $(window).resize(changeimage);
+            
+        });
+
+
+
+
+    </script>
+     
+
+</head>
+<body>
+    
+    <header>
+        <div><a href="index.html"><img src="img/Blizard.png" alt="Blizard"></a></div>
+            
+                <div class="list">
+            
+                    <ul class="hamberger">
+                        <li><a href="#">
+                                <h4>개요</h4>
+                            </a></li>
+                        <li>
+                            <h4>영웅</h4>
+                        </li>
+                        <li>
+                            <h4>게임플레이</h4>
+                        </li>
+                        <li>
+                            <h4>미디어</h4>
+                        </li>
+            
+                        <li>
+            
+                            <h4>커뮤니티</h4>
+                            <ul class="dropdownone">
+                                <li><a href="#">토론장</a></li>
+                                <li><a href="#">순위표</a></li>
+                            </ul>
+            
+                        </li>
+            
+                        <li>
+                            <h4>상점</h4>
+                            <ul class="dropdownone">
+                                <li><a href="#">게임 내 콘텐츠</a></li>
+                                <li><a href="#">기어스토어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                </div>
+            
+                <div class="rotatelogo" id="rotatelogo"><img src="img/logo.png" alt="logo"></div>
+            
+                <div id="myNav" class="overlay">
+            
+                    <a href="javascript:void(0)" class="closebtn">&times;</a>
+            
+                    <div class="overlay-content">
+                        <ul class="hamberger">
+                            <li><a href="#">개요</a></li>
+                            <li><a href="#">영웅</a></li>
+                            <li><a href="#">게임플레이</a></li>
+                            <li><a href="#">미디어</a></li>
+            
+                            <li>
+            
+                                <a href="">커뮤니티</a>
+                                <ul class="dropdownone">
+                                    <li><a href="#">토론장</a></li>
+                                    <li><a href="#">순위표</a></li>
+                                </ul>
+            
+                            </li>
+            
+                            <li>
+                                <a href="">상점</a>
+                                <ul class="dropdownone">
+                                    <li><a href="#">게임 내 콘텐츠</a></li>
+                                    <li><a href="#">기어스토어</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            
+                    </div>
+    </header>
+
+
+<div id="subwrap">
+  <!-- 슬라이더 -->
+<div id="slider">
+    <img src="img/the-destroyer.jpg" alt="the-destroyer">
+
+    <div id="herosection">
+        <div id="herobox">
+            <div id="abouthero">
+                 <div id="logo"><img src="img/warcraft-ac219bd0da.png" alt="logo"></div>
+                 <div>
+                     <div id="heroname">데스윙</div>
+                     <div> 파괴자 </div>
+                 </div>
+            </div>
+            <div>다섯 용의 위상 중 하나이며 검은용군단의 우두머리인 대지의 수호자 넬타리온은 한때 아제로스를 지키는 자였지만, 고대의 전쟁 중 고대 신들의 유혹에 타락해 동지들에게 등을 돌렸습니다. 이제 파괴자 데스윙으로 불리는 그가 시공의 폭풍으로 향하는 길을 찾았습니다. 그는 이곳에서 끝없는 분노로 온 세계를 파괴하고 결국 모든 생명을 말살하려는 궁극의 목적을 이루려 합니다.</div>
+        </div>
+         
+    </div>
+   
+</div>
+
+<!-- 메인가운데 -->
+<div id="main">
+    <div id="content">
+        <div class="left">
+            <div class="box">
+                <div class="abilityname">
+                    <div class="abilityicon"><img src="img/skillicon.png" alt="skillicon">
+                         <div><img src="img/skill1.png" alt="skill1"></div>
+                    </div>
+                    <p><h3>이글거리는 화염</h3></p>
+                </div>
+                <p>1.5초 후, 화염 줄기를 내뿜어 0.125초마다 21의 피해를 줍니다. 초당 30의 기력이 소모됩니다.</p>
+            </div>
+            <div class="box">
+                <div class="abilityname">
+                    <div class="abilityicon"><img src="img/skillicon.png" alt="skillicon">
+                         <div><img src="img/skill2.png" alt="skill2"></div>
+                    </div>
+                    <p><h3>소각</h3></p>
+                </div>
+                <p>0.75초 후, 날개를 퍼덕여 주위 적들에게 65의 피해를 줍니다. 세계 파괴자: 용암 폭발 피해를 주고 느려지게 하는 용암 웅덩이를 만듭니다.</p>
+            </div>
+            <div class="box">
+                <div class="abilityname">
+                    <div class="abilityicon"><img src="img/skillicon.png" alt="skillicon">
+                         <div><img src="img/skill3.png" alt="skill3"></div>
+                    </div>
+                    <p><h3>맹격</h3></p>
+                </div>
+                <p>0.5초 후, 한 방향으로 돌진하여 적들에게 38의 피해를 주고 2초 동안 35% 느려지게 합니다. 뛰어든 후에는 적들을 물어 72의 추가 피해를 줍니다. 세계 파괴자: 대지 분쇄 두 줄로 적에게 피해를 주고 기절시킵니다.</p>
+            </div>
+            <div class="box">
+                <div class="abilityname">
+                    <div class="abilityicon"><img src="img/skillicon.png" alt="skillicon">
+                         <div><img src="img/skill5.png" alt="skill5"></div>
+                    </div>
+                    <p><h3>대격변</h3></p>
+                </div>
+                <p>2초 후, 대상 방향으로 날며 땅을 불태워 경로상의 적들에게 90의 피해를 주고 초당 36의 피해를 주는 흔적을 남깁니다. 6초 동안 지속됩니다.</p>
+            </div>
+
+           
+        </div>
+        <div class="right">
+            <h3>플레이 활용 및 하이라이트</h3>
+            <div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6EwBY9DBVjQ" title="데스윙이 적 영웅들 찢어버리는 영상 [1080p, 히오스]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+            <div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/bieY4j29kgg" title="[옥냥이 히오스] 데스윙님이 시공에 강림하셨다! 진짜 겁나 셉니다🐲 (Heroes Of The Storm)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+        
+               
+    </div>
+     
+    <!-- 하단섹션 -->
+    <div class="sectionbox">
+    
+           <div class="detailbox">
+                 <div class="das">
+                     <img src="img/sectionimage.jpg" alt="sectionimage">
+                   
+                     <div class="detailtext">
+                             
+                          <p>플레이할 준비가 되셨나요?</p>
+                          <h3>히어로즈 오브 더 스톰 다운로드</h3>
+                          <button>무료로 플레이하기</button>
+
+                     </div>  
+                 </div>
+
+                 <div class="das2">
+                     <img src="img/sectionimage2.jpg" alt="sectionimage2">
+                   
+                     <div class="snsbox">   
+                                 
+                         <h3>소셜서비스</h3>
+                         <div class="snsmark">
+                             <div><img src="img/facebook.png" alt=""></div>
+                             <div><img src="img/twitter.png" alt=""></div>
+                             <div><img src="img/twitch.png" alt=""></div>
+
+                         </div>
+                     </div>  
+                 </div>
+           </div>
+            
+       
+    </div>    
+</div>    
+<!-- 풋터 -->
+<footer>
+    <div class="footerone">
+         
+            <select>
+                <option value="영어">한국어</option>
+                <option value="영어">영어</option>
+                <option value="네덜란드어">네덜란드어</option>
+                <option value="일본어">일본어</option>
+            </select>
+            <div class="logo"><a href=""><img src="img/Blizard.png" alt="logo"></a></div>
+         
+                 
+         <div class="ulbox">
+                 <ul>
+                  <li><a href=""><h3>인재 채용</h3></a></li>
+                  <li><a href=""><h3>회사 소개</h3></a></li>
+                  <li><a href=""><h3>고객지원</h3></a></li>
+                  <li><a href=""><h3>문의 등록</h3></a></li>
+                  <li><a href=""><h3>보도 자료</h3></a></li>
+                  <li><a href=""><h3>API</h3></a></li>
+                  <li><a href=""><h3>BATTLE.NET PC방</h3></a></li>
+                 </ul>
+          </div>      
+                  <P>한곳에서 모든게임을 플레이 할수있는 Battle.net앱</P>
+                
+                  <p>리자드 엔터테인먼트 유한 회사
+                    주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층
+                    대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: websupport@blizzard.co.kr
+                    사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | 사업자정보확인
+                    대표이사: 매리 아그네스 케틀러 | 개인정보 보호책임자: 이강호</p>
+    </div>             
+     <div class="footertwo">
+                    <div><img src="img/footer1.png" alt="footer1"></div>
+                    <div><img src="img/footer2.png" alt="footer2"></div>
+                    <div><img src="img/footer3.png" alt="footer3"></div>
+     </div>
+  
+    
+</footer>
+</body>
+</html>
